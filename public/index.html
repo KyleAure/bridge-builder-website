@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bridge Designer Evaluator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .jumbotron {
+        background-color: cornflowerblue;
+        color: aliceblue;
+    }
+
+    .bg-grey {
+        background-color: gainsboro;
+    }
+
+    .container-fluid {
+        padding: 60px 50px;
+    }
+
+    .input-group {
+        padding: 10px 10px;
+    }
+    .input-group-btn {
+        padding: 10px 10px;
+    }
+</style>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Bridge Designer Evaluator</h1>
+        <p>Let's see how you did!</p>
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <h2>Submission Form</h2>
+        <div class="input-group">
+            <span class="input-group-addon">Team Name</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Sassy Penguins">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon">Text</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+          </div>
+
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-default">Evaluate</button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+    </div>
+</body>
+</html>
