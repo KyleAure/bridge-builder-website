@@ -44,15 +44,21 @@ function extractData(member) {
         throw new Error("A member has failed, results not calculated.")
     }
 
-    if (member.compressionRatio != 0) {
-        sumCompression += member.compressionRatio;
-        countCompression++
-    }
+    sumCompression += member.compressionRatio;
+    countCompression++
 
-    if (member.tensionRatio != 0) {
-        sumTension += member.tensionRatio
-        countTension++
-    }
+    sumTension += member.tensionRatio
+    countTension++
+
+    // if (member.compressionRatio != 0) {
+    //     sumCompression += member.compressionRatio;
+    //     countCompression++
+    // }
+
+    // if (member.tensionRatio != 0) {
+    //     sumTension += member.tensionRatio
+    //     countTension++
+    // }
     
     if(member.material == "CS") {
         countCarbonSteelBeams++;
